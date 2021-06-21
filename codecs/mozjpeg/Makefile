@@ -26,6 +26,7 @@ enc/mozjpeg_node_enc.js dec/mozjpeg_node_dec.js: ENVIRONMENT = node
 		-s ENVIRONMENT=$(ENVIRONMENT) \
 		-s EXPORT_ES6=0 \
 		-s MODULARIZE=1 \
+		-s DYNAMIC_EXECUTION=0 \
 		-s EXPORT_NAME=$(notdir $(basename $@)) \
 		-o $@ \
 		$+
