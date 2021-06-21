@@ -24,7 +24,9 @@ enc/mozjpeg_node_enc.js dec/mozjpeg_node_dec.js: ENVIRONMENT = node
 		${LDFLAGS} \
 		--bind \
 		-s ENVIRONMENT=$(ENVIRONMENT) \
-		-s EXPORT_ES6=1 \
+		-s EXPORT_ES6=0 \
+		-s MODULARIZE=1 \
+		-s EXPORT_NAME=$(notdir $(basename $@)) \
 		-o $@ \
 		$+
 
