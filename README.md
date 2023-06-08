@@ -33,4 +33,6 @@ You can run the development server with:
 npm run dev
 ```
 
+cli only support v16.17.1
+
 [squoosh]: https://squoosh.app
